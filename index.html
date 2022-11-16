@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Super Triunfo</h1>
+    </header>
+    <div id="generator">
+        <div id="form-div">
+                
+                <form class="formulary" action="">
+                    <div class="buton-hide">
+                       
+                    </div>
+                    <h2>Crie a sua carta</h2>
+                    <p>Insira os dados do carro para a sua coleção personalizada</p>
+                    <div class="input-name">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" class="input-required" oninput="nameValidate()" placeholder="Nome do carro">
+                        <span class="span-required">Insira um nome de ao menos 3 letras</span>
+                    </div>
+                    <div class="input-image">
+                        <label for="image">Foto:</label>
+                        <input type="text" name="image" class="input-required"id="image"
+                        oninput="imgValidate()" placeholder="Link da imagem" >
+                        <span class="span-required">Insira um link de imagem da web</span>
+                    </div>
+                    <div class="input-km">
+                        <label for="km">Quilômetros por hora:</label>
+                        <input type="number" name="km" id="km"class="input-required" oninput="kmValidate()"   placeholder="Km/h">
+                        <span class="span-required">Insira até 3 caracteres</span>
+                    </div>
+                    <div class="input-hp">
+                        <label for="hp">Cavalos:</label>
+                        <input type="number" name="hp" id="hp"class="input-required" placeholder="Hp" oninput="hpValidate()">
+                        <span class="span-required">Os cavalos não podem ser de verdade</span>
+                    </div>
+                    <div class="input-ohundred">
+                        <label for="o-hundred">0 à 100 Km/h em segundos:</label>
+                        <input type="number" name="o-hundred" id="o-hundred" class="input-required"placeholder="0-100 Km/h" oninput="ohValidate()">
+                        <span class="span-required">insira até 3 caracteres</span>
+                    </div>
+                    <div class="input-cc">
+                        <label for="cc">Cilindradas:</label>
+                        <input type="number" name="cc" id="cc" class="input-required"placeholder="cc" oninput="ccValidate()" >
+                        <span class="span-required">até 5 caracteres</span>
+                    </div>
+                    <div class="input-ms">
+                        <label for="motor-spool">Cilindros:</label>
+                        <input type="text" name="motor-spool" id="motor-spool" class="input-required" oninput="msValidate()" oninput="msValidate()" placeholder="Cilindros do motor">
+                        <span class="span-required">Lembre de especificar o tipo de motor</span>
+                    </div>
+                    <div class="input-kg">
+                        <label for="kg">Quilos:</label>
+                        <input type="number" name="kg" id="kg"class="input-required" placeholder="Kg" oninput="kgValidate()">
+                        <span class="span-required">até 4 digitos</span>
+                    </div>
+                    <div class="div-submit">
+                        <button type="submit" class="submit" id="submit"  value="addCard">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        <div id="deck">
+        </div>
+    </div>
+
+
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
